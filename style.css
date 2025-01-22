@@ -1,1 +1,105 @@
 @import url('https://fornts.googleapis.com/css2?family=poppins&display=sawp');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.search-container{
+    display: flex;
+    width: 100vw;
+    height: 150px;
+    top: 0;
+    left: 0;
+    align-items: center;
+    background-color: white;
+    padding-left: 50px;
+    position: fixed;
+    z-index: 9999;
+}
+
+.search-form{
+    display: flex;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    box-shadow: 5px 5px 10px #c9c9c9, -5px -5px 10px #ffffff;
+}
+
+.search input{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    width: 40vw;
+    height: 48px;
+    min-width: 400px;
+}
+
+.icon{
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    height: 40px;
+    width: 40px;
+    color: #292929;
+}
+
+.searchResults{
+    padding: 20px 0 50px;
+    margin-left: 140px;
+    width: 550px;
+    text-align: left;
+}
+
+.results{
+    width: 40vw;
+    margin-top: 150px;
+    margin-left: 140px;
+}
+
+.results{
+    width: 100%;
+    padding: 15px 40px 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    overflow-wrap: break-word;
+    box-shadow: 5px 5px 10px #cccccc, -5px -5px 10px #ffffff;
+    animation: reveal 0.5s;    
+}
+
+.result:hover{
+    background-color: #f5f5f5;
+}
+a{
+    text-decoration: none;
+    color: #c9c9c9;
+}
+
+.result-title{
+    color: #292929;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-match{
+    background: rgba(225, 225, 0, 0.5);
+}
+
+.result-link{
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}   

@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nevbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    color: whit e;
+    padding: 10px 50px;
+    position: sticky;
+    height: 80px;
+    z-index: 999;
+}
+
+.nevbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+    z-index: 1;
+}
+
+#nevbar__logo{
+    color: #59C173;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0,#6f21ac);
+    background: linear-gradient(to right, #5D26C1, #a17fe0,#6f21ac);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nevbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nevbar__item{
+    height: 80px;
+}
+
+.nevbar__links{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 100%;
+    width: 125px;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    transition: all 0.3s ease;
+}
+
+.nevbar__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0,#6f21ac);
+    background: linear-gradient(to right, #5D26C1, #a17fe0,#6f21ac);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #c33764;
+    background: -webkit-linear-gradient(to right, #1d2671, #c33764);
+    background: linear-gradient(to right, #1d2671, #c33764);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2c5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2c5364, #203A43, #0F2027);
+}
+
+.nevbar__links:hover{
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2c5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2c5364, #203A43, #0F2027);
+    color: #9518fc;
+    transition: all 0.3s ease;
+}

@@ -18,4 +18,21 @@ const checkConfirm = (ev) => {
     else {
         alert("Thank you everything looks good.");
     }
-}
+};
+
+myConfirmation.addEventListener('submit', checkConfirm);
+myPassword.addEventListener('submit', checkConfirm);
+//End of Submit Question Form
+
+//Capturing the Form Data on the submit event
+login.addEventListener('submit', (ev) => {
+ alert('${myuser.value} your question has been submitted.')
+ login.reset();
+ ev.preventDefault();   
+});
+
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+});
+//End of Responsive Menu//
